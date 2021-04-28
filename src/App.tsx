@@ -1,7 +1,8 @@
 import React from 'react';
+import Basic from './components/Basic';
 
 const App = () => {
-  return <div>hello world</div>;
+  return <div><Basic>hello world</Basic></div>;
 };
 
 export default App;
