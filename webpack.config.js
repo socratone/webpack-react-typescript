@@ -15,7 +15,7 @@ module.exports = {
 
   resolve: {
     // 확인 가능한 확장자로 '.ts' 와 '.tsx' 를 추가합니다.
-    extensions: ['.ts', '.tsx'],
+    extensions: ['.ts', '.tsx', '.js'],
   },
 
   module: {
@@ -47,8 +47,8 @@ module.exports = {
   // 해당 전역 변수가 있다고 가정하고 사용합니다.
   // 브라우저가 빌드간에 라이브러리를 캐시 할 수 있도록
   // 모든 의존성을 묶지 않아도 되기 때문에 중요합니다.
-  externals: {
-    react: 'React',
-    'react-dom': 'ReactDOM',
-  },
+  // externals: {
+  //   react: 'React',
+  //   'react-dom': 'ReactDOM',
+  // },
 };
